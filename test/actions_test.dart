@@ -23,9 +23,9 @@ List<Action> actions = [
 ];
 
 void main() {
-  group('Actions tests', () {
+  group('Actions Rest API Tests', () {
     final dio = Dio();
-    final client = RestClient(dio);
+    final client = ActionRestClient(dio, baseUrl: 'http://192.168.0.186:3666');
 
     //dio.options.headers['accept'] = '*/*';
 

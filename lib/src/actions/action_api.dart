@@ -4,11 +4,11 @@ import 'package:dio/dio.dart';
 
 import 'package:more4iot_dart_api/src/actions/models/action.dart';
 
-part 'action_service.g.dart';
+part 'action_api.g.dart';
 
-@RestApi(baseUrl: "http://192.168.0.186:3666")
-abstract class RestClient {
-  factory RestClient(Dio dio, {String baseUrl}) = _RestClient;
+@RestApi()
+abstract class ActionRestClient {
+  factory ActionRestClient(Dio dio, {String baseUrl}) = _ActionRestClient;
 
   @GET('/actions')
   Future<List<Action>> getActions();

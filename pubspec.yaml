@@ -6,9 +6,12 @@ version: 1.0.0
 environment:
   sdk: '>=2.12.0 <3.0.0'
 
-# dependencies:
-#   path: ^1.8.0
-
 dev_dependencies:
   pedantic: ^1.10.0
+  retrofit_generator: ^2.0.0+2
   test: ^1.16.0
+dependencies:
+  build_runner: ^2.0.5
+  json_serializable: ^4.1.3
+  logger: ^1.0.0
+  retrofit: ^2.0.0

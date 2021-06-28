@@ -16,7 +16,7 @@ abstract class ResourceRestClient {
   @PUT('/resources/update')
   Future<dynamic> update(@Body() Resource resource);
   @GET('/resources/{uuid}')
-  Future<List<Resource>> getResourceFromUuid(@Path() String uuid);
+  Future<Resource> getResourceFromUuid(@Path() String uuid);
   @GET('/resources/verify/{uuid}')
   Future<bool> verify(@Path() String uuid);
   @DELETE('/resources/delete/{uuid}')

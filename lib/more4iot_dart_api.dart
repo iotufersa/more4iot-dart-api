@@ -15,3 +15,4 @@ export 'src/resources/resource_api.dart';
 export 'src/resources/models/resource.dart';
 
 export 'src/async/scope.dart';
+export 'src/async/async.dart';

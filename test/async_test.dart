@@ -13,4 +13,6 @@ void main() {
   });
 }
 
-void callback(Scope scope) {}
+void callback(Scope scope) {
+  print(scope.toJson());
+}
